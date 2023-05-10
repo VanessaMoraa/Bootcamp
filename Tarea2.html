@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Tu objetivo es crear una tarjeta de perfil utilizando solo HTML y CSS. La tarjeta debe contener una imagen de perfil, el nombre del usuario y una breve descripción.
+
+Instrucciones:
+
+Crea una estructura básica de HTML con un contenedor principal para la tarjeta.
+Agrega una imagen de perfil utilizando la etiqueta <img> y asegúrate de que tenga un tamaño apropiado.
+Estiliza el nombre del usuario utilizando CSS para que se destaque y tenga un tamaño adecuado.
+Agrega un párrafo con una breve descripción y estilízalo para que tenga un tamaño y estilo de fuente legible.
+Utiliza CSS para aplicar márgenes, rellenos y bordes a la tarjeta, de manera que se vea visualmente agradable.
+Opcionalmente, puedes agregar otros elementos o estilos adicionales para mejorar el diseño de la tarjeta.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        }
+        #nombre{
+            background-color:plum;
+            width:220px;
+            font-size: xx-large;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style:bold;
+            padding:10px;
+            padding-top:10px;
+            margin-top:20px;
+            margin-left:230px;
+        }
+        #imagen{
+            background-color:pink;
+            width: 240px;
+            padding:10px;
+            margin-left:220px;
+            margin-top:20px;
+            margin-bottom:20px;
+        }
+        #descripcion{
+            background-color:aqua;
+            width:600px;
+            font-size: large;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style:normal; 
+            margin-left:30px;
+            text-align:center;
+        }
+<!-- Aquí intenté que todo se centrara pero no funcionó !-->
+        .contenedor-grid{
+            justify-items: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+<div class="contenedor-grid">
+    <!-- Para reproducir cajitas usé div.grid-hijo{$}*8 y me sale el código para hacerlas automáticamente !-->
+    <div class="grid" id="nombre" name="tarjeta">Tobias y Violeta</div>
+    <div class="grid" id="imagen" name="tarjeta"><img src="https://lh3.googleusercontent.com/pw/AJFCJaV8AoEaG4-8D5FykvP4I33V0GaCvQptbqUYxN2bTQLsakhNcjAm51aL2dM76vF-ixZR0RGtUJzxBTgbslzXNOySWMyQJbUT1NmjB8RyT-hD9PkDKaxA3DW3ZHwbDvOi9vacN8d48FUq3CNRZ4DuMgIWO7di7jEpTQLc7A_xqupT0DmvyP6gjGNGWBysFKnHL9mGbWeiENBfi2LBm3zyGO5cf_MJmZQ5thDIxA4rXcl0M-T2ivdSQ_kiGs1MZUOtG_bbsirIGSdFMSgAVoD_P5m-FThBmA-vRq0VjJ0nOG8-eo4F-MCXiOnxDGWD1UjvfQ_wS4ksaLl5hvccppXTt2UmYWjiIfFKc56X8kqZOZ0hKQHFwDwOY1-hCMjEjTTwEV9AfIZDXZ4yla0w73Aek8fRkTvY82JuT3ZXyC9AwR1s5yzvKBtS-gG4dUoYbrsqLZyJcNZn5Klmc5Pfr-89DRa6TMoGgr9wR97cJox3ric93zm27mh444jI-HXRo1TP2bcFquoiL7JvKGnEaeVu7yFu5J9lxfMeY_WLXyih7uqaSVPEXt_UBauRn39KPa0a9rZiHekM2e-FmnRcFt-S0RruUcnI6edblZ-8cF_UCzBKiOKXnTak9C8W73RycZaI9CnT_vYZTh61GV8br2smJGxFOtyFF4XF7wDGXcQxKWIYKi7EA7CxpTUu0Eh2tCa4-BK51kH7N7zjn072hUevG_GgzEHbxxAsDzTtZdG9Ma6q7ycU9lXvK0nvQIvH1flCW8Drm1EniBNpNFiykP4dlj2WUg7SUG5F0hJKzdNJRYkRBhaihbHkvADfXb0ubqempiAd-Gmy4LjhCXHry8xD4Ci2sdY-_gL6ihmIip-z2q1NOEkurIlPs1UUTlGWMZbqc56EVdZXynO8gBbN3m2bQNY=w242-h220-no?authuser=0" alt=""></div>
+    <div class="grid" id="descripcion" name=""tarjeta>Tobias y Violeta eran mis 2 perros, ellos llegaron a mi familia hace 12 años, Violeta era una labradora de color casi blanco, le encantaba comer y que le rascaran la panza. Tobias era un perro criollo, era bastante territorial pero le encantaba que los humanos le dieran atención, le gustaba mucho lamer a la gente y que le consintieran las orejas o la cola. Violeta murió hace dos años debido a un cáncer y Tobias murió hace un año por un fallo multisistémico. Estos dos perros me enseñaron muchas cosas y fueron mi compañía durante toda mi adolescencia, siempre serán importantes para mí.</div>
+</div>
+</body>
+
+</html>
